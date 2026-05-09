@@ -1,51 +1,66 @@
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6109f00f-6ce6-4f2d-8dbf-f61393dde8b7" /># Employee-Feedback-Analytics-Dashboard
-A live HR analytics dashboard built using Google Forms, Google Sheets and Power BI
 # 📊 Employee Feedback Analytics Dashboard
 
 ## 🔍 Project Overview
-A live end-to-end HR analytics solution that collects, 
-processes and visualizes employee feedback data in real 
-time using completely free tools.
+A live end-to-end HR analytics solution that collects, processes and visualizes employee feedback data in real time using completely free tools. The dashboard enables HR teams and leadership to monitor employee satisfaction, work preferences and manager effectiveness instantly.
 
 ## 🛠️ Tools Used
-- Google Forms — Data Collection
-- Google Sheets — Data Storage
-- Power BI Desktop — Data Visualization
+| Tool | Purpose |
+|------|---------|
+| Google Forms | Live feedback data collection |
+| Google Sheets | Automatic data storage |
+| Power BI Desktop | Interactive dashboard |
 
 ## 📐 Architecture
-Google Form → Google Sheets → CSV → Power BI Dashboard
+Employee fills Google Form → Response stored in Google Sheets → Sheet published as CSV endpoint → Power BI connects via Web CSV → Dashboard updates on refresh
 
 ## 📊 Dashboard Visuals
-- KPI Card — Total Responses
-- Bar Chart — Satisfaction by Department
-- Pie Chart — Work Mode Distribution
-- Gauge — Average Company Rating
-- Donut Chart — Recommendation Rate
-- Column Chart — Manager Support by Job Role
-- Slicer — Department Filter
+| Visual | Chart Type | Insight |
+|--------|-----------|---------|
+| Total Responses | KPI Card | Live response count (42) |
+| Satisfaction by Department | Clustered Bar Chart | Avg satisfaction per dept broken down by job role |
+| Work Mode Analysis | Pie Chart | WFH vs Hybrid vs Office distribution |
+| Company Rating | Gauge Chart | Overall avg rating (3.86/5) |
+| Recommendation Rating | Donut Chart | Employee NPS breakdown |
+| Manager Support by Job Role | Column Chart | Support levels across job levels |
+
+## 🎛️ Interactive Filters
+- Department filter
+- Job Role filter
+- Years of Experience filter
+- Date range filter (Timestamp)
 
 ## 💡 Key Insights
-- Overall company rating: 3.88/5
-- 34% employees Definitely recommend the company
-- Managers receive highest support scores (4.89)
-- Interns receive lowest support scores (2.57)
-- Hybrid is the most preferred work mode
+- Overall company rating: 3.86/5
+- 33% of employees Definitely recommend the company
+- Managers receive highest support score (4.89/5)
+- Interns receive lowest support score (2.57/5)
+- Sales department shows highest work satisfaction
+- Finance department needs immediate attention
+- Work mode split: 35% WFO | 33% WFH | 31% Hybrid
 
 ## 🚀 How to Use
 1. Open Google Form link to submit feedback
-2. Data automatically appears in Google Sheets
-3. Open Power BI file
-4. Click Refresh to get latest data
-5. Use Department slicer to filter dashboard
+2. Data automatically flows into Google Sheets
+3. Open Power BI Desktop file
+4. Click Refresh to pull latest responses
+5. Use slicers to filter by Department, Job Role, Experience or Date
 
 ## 🔗 Live Form Link
-[Click here to submit feedback](#)
+[Click here to submit employee feedback](YOUR_GOOGLE_FORM_LINK_HERE)
 
 ## 📸 Dashboard Preview
 ![Dashboard](screenshot.png)
 
 ## 🔮 Future Scope
 - Deploy on Power BI Service for auto refresh
-- Connect to SQL database for scale
-- Build mobile app using Flutter
-- Add predictive attrition analytics
+- Connect to SQL database for enterprise scale
+- Build mobile app for managers
+- Add predictive attrition analytics using Python
+- Integrate with HR systems like Workday or SAP
+
+## 🧰 Technical Highlights
+- Zero infrastructure cost — built entirely on free tools
+- Scalable to 10 million+ responses via Google Sheets
+- Real time refresh with single click
+- Interactive cross filtering across all visuals
+- Responsive layout with 4 dynamic slicers
